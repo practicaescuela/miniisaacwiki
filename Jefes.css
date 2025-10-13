@@ -170,39 +170,26 @@ body {
 .volverinicio{
     height: 50px;
 }
-@media(width<600px) {
-    .card {
-        flex-direction: column
-    }
+@media(max-width:500px) {
+ 
+.card {
+
+    grid-template-areas:
+    "titulo"
+    "img"
+    "texto1"
+    "texto2"
+    "Masinfo";
 }
 
-@media(width<600px) {
     .ca {
-        flex-direction: column
+        grid-template-areas:
+            "tituloñ"
+            "imgñ"
+            "texto1ñ"
+            "texto2ñ"
+            "Masinfoñ"
+        ;
     }
 }
 
-@media(width<500px) {
-    .contenedorGrid {
-        display: grid;
-        grid-template-areas:
-            "titulo titulo titulo"
-            "img img img"
-            "texto1 texto1 texto1"
-            "texto2 texto2 texto2"
-            "Masinfo Masinfo Masinifo"
-        ;
-    }
-}
-@media(width<500px) {
-    .contenedorGrid {
-        display: grid;
-        grid-template-areas:
-            "tituloñ tituloñ tituloñ"
-            "imgñ imgñ imgñ"
-            "texto1ñ texto1ñ texto1ñ"
-            "texto2ñ texto2ñ texto2ñ"
-            "Masinfoñ Masinfoñ Masinifoñ"
-        ;
-    }
-}
