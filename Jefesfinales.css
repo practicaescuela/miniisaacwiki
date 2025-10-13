@@ -187,27 +187,25 @@ body {
     background-image: linear-gradient(rgb(136, 0, 0), rgb(255, 255, 255))
 }
 
-@media(width<500px) {
-    .contenedorGrid {
-        display: grid;
-        grid-template-areas:
-            "titulo titulo titulo"
-            "img img img"
-            "texto1 texto1 texto1"
-            "texto2 texto2 texto2"
-            "Masinfo Masinfo Masinifo"
-        ;
-    }
+@media(max-width:500px) {
+ 
+.card {
+
+    grid-template-areas:
+    "titulo"
+    "img"
+    "texto1"
+    "texto2"
+    "Masinfo";
 }
-@media(width<500px) {
-    .contenedorGrid {
-        display: grid;
+
+    .ca {
         grid-template-areas:
-            "tituloñ tituloñ tituloñ"
-            "imgñ imgñ imgñ"
-            "texto1ñ texto1ñ texto1ñ"
-            "texto2ñ texto2ñ texto2ñ"
-            "Masinfoñ Masinfoñ Masinifoñ"
+            "tituloñ"
+            "imgñ"
+            "texto1ñ"
+            "texto2ñ"
+            "Masinfoñ"
         ;
     }
 }
@@ -223,3 +221,4 @@ body {
 .volverinicio{
     height: 50px;
 }
+
